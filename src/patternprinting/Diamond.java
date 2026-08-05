@@ -30,7 +30,6 @@ public class Diamond {
                     System.out.println();
                 }
 
-
                 for (int j = 1; j <= (n - 1) / 2; j++) {          //Lower Half
                     for (int k = 1; k <= blank2; k++) {
                         System.out.print("  ");
@@ -47,3 +46,33 @@ public class Diamond {
         }
 }
 
+
+/* METHOD 2:
+            for(int i=1; i<=n; i++){                //Upper Part
+            for(int j = 1; j<=n-i; j++){
+               System.out.print("  ");
+            }
+
+            for(int j = 1; j<=2*i-1; j++){
+                System.out.print("* ");
+            }
+
+            System.out.println();
+             }
+
+            for(int i =1; i<=n; i++){               //Lower Part
+            if(i==1){
+                continue;
+            }
+
+            for(int j=1; j<= i-1; j++){
+                System.out.print("  ");
+            }
+
+            for(int j = 1; j<= 2*n-2*i+1; j++){
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+ */
