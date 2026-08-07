@@ -31,7 +31,7 @@ public class BinarySearch {
           int start = 0;
           int end = n-1;
 
-          while(start<=end){
+          while(end>=start){
              int mid = (start+end)/2;;
               if(key==arr[mid]){
                   System.out.println("The element you are searching is at " + mid);
