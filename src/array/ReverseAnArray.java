@@ -17,7 +17,11 @@ public class ReverseAnArray {
         System.out.println(Arrays.toString(arr));
 
 
-        System.out.println("Reversed Array: " + reverseArray(n, arr));
+        System.out.println("Reversed Array: ");
+        reverseArray(n, arr);
+        for(int i = 0; i<n; i++){
+            System.out.println(arr[i]);
+        }
     }
 
 
