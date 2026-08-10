@@ -41,7 +41,7 @@ public class MaxSubArraySum {
 }
 
 
-/*
+/*METHOD 2:
 public static int maximumSumOfSubArray(int n, int[] arr) {
       int biggest = Integer.MIN_VALUE;
       for (int i = 0; i < n; i++) {          // starting index
