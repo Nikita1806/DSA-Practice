@@ -16,17 +16,14 @@ public class SearchIn2DArray {
             for (int j = 0; j < m; j++) {
                 arr[i][j] = sc.nextInt();
             }
+
         }
 
         System.out.print("Enter the element you want to Search: ");
         int key = sc.nextInt();
 
-        boolean isFound = searchingAnElement(arr,n,m,key);
-        if(isFound){
-            System.out.println("We Have Found Your Element. ");
-        }else{
-            System.out.println("Element not Found in Array.");
-        }
+        searchingAnElement(arr,n,m,key);
+
 
     }
 
@@ -34,10 +31,12 @@ public class SearchIn2DArray {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < m; j++) {
                     if (arr[i][j] == key) {
+                        System.out.println("We Have Found Your Element at (" + i + "," + j + ")." );
                         return true;
                     }
                 }
             }
+            System.out.println("Element not Found in Array.");
             return false;
         }
 
