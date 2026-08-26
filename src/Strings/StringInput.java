@@ -15,6 +15,8 @@ public class StringInput {
         System.out.print("Please Enter Your Full Name: ");
         fullName = sc.nextLine();    //It takes input with Spaces
         System.out.println(fullName);
+        System.out.println(fullName.length());    //Length Function
+
 
     }
 }
