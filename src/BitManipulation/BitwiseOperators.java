@@ -13,6 +13,8 @@ public class BitwiseOperators {
         bitwiseOR(a,b);
         bitwiseXOR(a,b);
         bitwiseNOT(a,b);
+        bitwiseLeftShift(a,b);
+        bitwiseRightShift(a,b);
     }
 
     public static void bitwiseAND(int a, int b){
@@ -29,6 +31,14 @@ public class BitwiseOperators {
 
     public static void bitwiseNOT(int a, int b){
         System.out.println(~a + " " + ~b);
+    }
+
+    public static void bitwiseLeftShift(int a, int b){
+        System.out.println(a << b);
+    }
+
+    public static void bitwiseRightShift(int a, int b){
+        System.out.println(a >> b);
     }
 
 }
