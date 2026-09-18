@@ -10,9 +10,16 @@ public class BitwiseOperators {
         int b = sc.nextInt();
 
         bitwiseAND(a,b);
+        bitwiseOR(a,b);
     }
 
     public static void bitwiseAND(int a, int b){
         System.out.println(a & b);
     }
+
+    public static void bitwiseOR(int a, int b){
+        System.out.println(a | b);
+    }
+
+
 }
