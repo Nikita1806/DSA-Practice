@@ -11,6 +11,7 @@ public class BitwiseOperators {
 
         bitwiseAND(a,b);
         bitwiseOR(a,b);
+        bitwiseXOR(a,b);
     }
 
     public static void bitwiseAND(int a, int b){
@@ -19,6 +20,10 @@ public class BitwiseOperators {
 
     public static void bitwiseOR(int a, int b){
         System.out.println(a | b);
+    }
+
+    public static void bitwiseXOR(int a, int b){
+        System.out.println(a ^ b);
     }
 
 
