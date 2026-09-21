@@ -36,8 +36,8 @@ public class UpdateIthBit {
     //METHOD 2:
 
     public static int updateIthBitInNum2(int num, int i, int newBit){
+        int clearBit = ClearIthBit.clearIthBitOfNum(num, i);
         int bitMask = newBit<<i;
-
-        return bitMask | num;
+        return bitMask | clearBit;
     }
 }
