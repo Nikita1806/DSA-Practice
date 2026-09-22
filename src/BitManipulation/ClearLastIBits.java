@@ -10,12 +10,12 @@ public class ClearLastIBits {
         System.out.print("Enter the bit you wanna Update: ");
         int i = sc.nextInt();
 
-        int result = clearIthBitOfNum(num, i);
+        int result = clearLastIBitOfNum(num, i);
         System.out.println("After change: " + result);
 
     }
 
-    public static int clearIthBitOfNum(int num, int i) {
+    public static int clearLastIBitOfNum(int num, int i) {
         int bitmask = ~0 << i;
 
         return num & bitmask;
