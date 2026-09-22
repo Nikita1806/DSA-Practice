@@ -6,6 +6,10 @@ public class CountONEinNumber {
 
         System.out.print("Enter a Number: ");
         int n = sc.nextInt();
+
+        int countOfOne = countNoOfBitAsONE(n);
+
+        System.out.println("Total number of One(bit) is in the given Number is " + countOfOne);
     }
 
     public static int countNoOfBitAsONE(int num) {
