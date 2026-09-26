@@ -18,6 +18,6 @@ public class Factorial {
         }
         int fact = n * factorial(n-1);
 
-        return fact;
+        return fact;         // or we can simply write : return n * factorial(n-1);
     }
 }
