@@ -24,7 +24,7 @@ public class FastExponentiation2 {
             }
 
             a = (a*a)%m;
-        //    n = n/2;
+          //n = n/2;
             n = n>>1;
         }
         return ans;
