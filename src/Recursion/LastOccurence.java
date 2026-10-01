@@ -1,6 +1,6 @@
 package Recursion;
 import java.util.Scanner;
-public class FirstOccurence {
+public class LastOccurence {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -18,22 +18,25 @@ public class FirstOccurence {
         int key = sc.nextInt();
 
         int i = 0;                //for indexing
-        int result = firstOccurence(arr, i, key);
+        int store = -1;              //to store the repeating value of Key
+        int result = lastOccurence(arr, i, key, store);
 
         if(result == -1){
             System.out.println("The required key is not present in array.");
         }else {
-            System.out.println("The required key first occurs at index " + result);
+            System.out.println("The required key last occurs at index " + result);
         }
     }
 
-    public static int firstOccurence(int[] arr, int i, int key){
-        if (i == arr.length) {            //Base  Condition
-            return -1;
+    public static int lastOccurence(int[] arr, int i, int key, int store){
+        if(i == arr.length){                 //   Base Condition
+            return store;
         }
+
         if(arr[i] == key){
-            return i;
+            store = i;
         }
-        return firstOccurence(arr, i+1, key);
+
+        return lastOccurence(arr, i+1, key, store);
     }
 }
