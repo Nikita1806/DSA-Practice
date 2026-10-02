@@ -32,8 +32,8 @@ public class LastOccurence3{
             return -1;
         }
 
-        int isFound = firstOccurence(arr, i+1, key);
-        if(isFound == -1 && arr[i]==key){
+        int isFound = firstOccurence(arr, i+1, key);          //Traversing from Backward
+        if(isFound == -1 && arr[i]==key){            //Testing for Slf too
             return i;
         }
         return isFound;
