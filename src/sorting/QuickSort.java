@@ -10,7 +10,10 @@ public class QuickSort {
     }
 
     public static void finalCheck(int[] arr){
-        
+
     }
 
+    public static void newRoom(int[] arr){
+        
+    }
 }
