@@ -6,9 +6,10 @@ public class FindAllSubstrings {
 
         System.out.print("Enter your String: ");
         String str = sc.nextLine();
-        String result = findingSubsetsOfString(str, " ", 0);
+        String result = findingSubsetsOfString(str, "", 0);
 
-        System.out.println("Subsets of String: " + result);
+        System.out.println("Subsets of String: " );
+        System.out.print(result);
 
     }
 
@@ -16,7 +17,7 @@ public class FindAllSubstrings {
         //Base Case
         if(i == str.length()){
             if(ans.length() == 0){
-                System.out.p
+                return "Null\n";
             }
             return ans + "\n";
         }
