@@ -41,6 +41,4 @@ public class BaseOfNQueen {
             System.out.println();
         }
     }
-
-
 }
