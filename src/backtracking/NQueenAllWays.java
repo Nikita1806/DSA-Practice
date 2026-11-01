@@ -66,7 +66,4 @@ public class NQueenAllWays {
             System.out.println();
         }
     }
-
-
-
 }
