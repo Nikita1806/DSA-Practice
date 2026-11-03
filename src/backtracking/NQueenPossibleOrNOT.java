@@ -14,9 +14,12 @@ public class NQueenPossibleOrNOT {
             }
         }
 
-        int totalNumOfWays = allPossiblePositionOnBoard(board, 0);
+        if(allPossiblePositionOnBoard(board, 0)){
+           System.out.println("Solution is possible.");
+        }else{
+            System.out.println("Solution is NOT possible.");
+        }
 
-        System.out.print("Total number of ways to put " + n + " Queens on chess board: " + totalNumOfWays);
 
 
 
@@ -60,7 +63,7 @@ public class NQueenPossibleOrNOT {
                 board[row][j] = 'x';        //Backtracking step
             }
         }
-        return count;
+        return false;
     }
 
 }
