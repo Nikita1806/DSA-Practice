@@ -19,10 +19,6 @@ public class NQueenPossibleOrNOT {
         }else{
             System.out.println("Solution is NOT possible.");
         }
-
-
-
-
     }
     //All ways for putting N Queen safely
     public static boolean isSafeToPlaceHereQueen(char board[][], int row, int col){
